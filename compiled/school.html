@@ -1,0 +1,285 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="../compiled/flipclock.css">
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+		<script src="../compiled/flipclock.js"></script>		
+	</head>
+	<body>
+	
+	<!--always remember to add in more headers and timer variables-->
+	<!--How many countdown timers are in here? Currently: 5, 5 commented out (ALWAYS UPDATE HERE)-->
+	
+	<h1 align="right">TA</h1>
+	
+	<!--
+	<h1>HW6 Grade</h1>
+
+	<div class="clock-1" style="margin:2em;"></div>
+	-->
+	
+	<hr>
+	
+	<h1 align="right">Classes_ONGOING</h1>
+	
+	<h2 align="right">Sampling</h2>
+	
+	<!--
+	<h1>HW6</h1>
+	
+	<div class="clock-2" style="margin:2em;"></div>
+	-->
+	
+	<!--this is a new timer-->
+	<h1>HW10</h1>
+	
+	<div class="clock-3" style="margin:2em;"></div>
+    
+    <hr>
+    
+    <h2 align="right">river</h2>
+    
+    <!--this is a new timer-->
+    <h1>project report</h1>
+    
+    <div class="clock-6" style="margin:2em;"></div>
+    
+	<hr>
+	
+	<h2 align="right">watershed</h2>
+	
+	<!--
+	<h1>HW</h1>
+	
+	<div class="clock-4" style="margin:2em;"></div>
+	-->
+	
+	<h1>Project</h1>
+	
+	<div class="clock-5" style="margin:2em;"></div>
+	
+	<!--
+	<h1>PHD Proposal</h1>
+	
+	<div class="clock-6" style="margin:2em;"></div>
+	
+	<h1>Nov Lit Review</h1>
+	
+	<div class="clock-7" style="margin:2em;"></div>
+	
+	<h1>Dec Lit Review</h1>
+	
+	<div class="clock-8" style="margin:2em;"></div>
+	
+	<h1>AmericanView Project Complete</h1>
+	
+	<div class="clock-9" style="margin:2em;"></div>
+	
+	<h1>AmericanView Project Report</h1>
+	
+	<div class="clock-10" style="margin:2em;"></div> 
+	-->
+	
+	<div class="message"></div>
+
+	<script type="text/javascript">
+		var clocks = [];
+		
+		$(document).ready(function() {
+				
+				// ALL YEARS need to be changed every year!!!!!!!!!!!!!////////
+				// Countdown 1
+				// Grab the current date
+				var currentDate = new Date();
+				
+				// Set some date in the future. In this case, it's always Jan 1
+				var futureDate  = new Date(currentDate.getFullYear(), 9, 24);
+
+				// Calculate the difference in seconds between the future and current date
+				var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+
+				// Instantiate a coutdown FlipClock
+				clock = $('.clock-1').FlipClock(diff, {
+					clockFace: 'DailyCounter',
+					countdown: true
+				});
+
+				////////////////////////////////////////////////////////////////////
+				// Countdown 2
+				// Do not forget to add in the new variables with new numbers//
+				// Grab the current date
+				var currentDate = new Date();
+				
+				// Set some date in the future. In this case, it's always Jan 1
+				//month is always minus 1
+				var futureDate2  = new Date(currentDate.getFullYear(), 9, 24);
+
+				// Calculate the difference in seconds between the future and current date
+				var diff2 = futureDate2.getTime() / 1000 - currentDate.getTime() / 1000;
+
+				// Instantiate a coutdown FlipClock
+				clock = $('.clock-2').FlipClock(diff2, {
+					clockFace: 'DailyCounter',
+					countdown: true
+				});
+				
+				////////////////////////////////////////////////////////////////////
+				// Countdown 3
+				// Do not forget to add in the new variables with new numbers//
+				// Grab the current date
+				var currentDate = new Date();
+				
+				// Set some date in the future. In this case, it's always Jan 1
+				//month is always minus 1
+				var futureDate3  = new Date(currentDate.getFullYear(), 10, 27);
+
+				// Calculate the difference in seconds between the future and current date
+				var diff3 = futureDate3.getTime() / 1000 - currentDate.getTime() / 1000;
+
+				// Instantiate a coutdown FlipClock
+				clock = $('.clock-3').FlipClock(diff3, {
+					clockFace: 'DailyCounter',
+					countdown: true
+				});
+				
+				////////////////////////////////////////////////////////////////////
+				// Countdown 4
+				// Do not forget to add in the new variables with new numbers//
+				// Grab the current date
+				var currentDate = new Date();
+				
+				// Set some date in the future. In this case, it's always Jan 1
+				//month is always minus 1
+				var futureDate4  = new Date(currentDate.getFullYear(), 9,27);
+
+				// Calculate the difference in seconds between the future and current date
+				var diff4 = futureDate4.getTime() / 1000 - currentDate.getTime() / 1000;
+
+				// Instantiate a coutdown FlipClock
+				clock = $('.clock-4').FlipClock(diff4, {
+					clockFace: 'DailyCounter',
+					countdown: true
+				});
+				
+				////////////////////////////////////////////////////////////////////
+				// Countdown 5
+				// Do not forget to add in the new variables with new numbers//
+				// Grab the current date
+				var currentDate = new Date();
+				
+				// Set some date in the future. In this case, it's always Jan 1
+				//month is always minus 1
+				var futureDate5  = new Date(currentDate.getFullYear(), 10, 28);
+
+				// Calculate the difference in seconds between the future and current date
+				var diff5 = futureDate5.getTime() / 1000 - currentDate.getTime() / 1000;
+
+				// Instantiate a coutdown FlipClock
+				clock = $('.clock-5').FlipClock(diff5, {
+					clockFace: 'DailyCounter',
+					countdown: true
+				});
+				
+				
+				////////////////////////////////////////////////////////////////////
+				// Countdown 6
+				// Do not forget to add in the new variables with new numbers//
+				// Grab the current date
+				var currentDate = new Date();
+				
+				// Set some date in the future. In this case, it's always Jan 1
+				//month is always minus 1
+				var futureDate6  = new Date(currentDate.getFullYear(), 11, 5);
+
+				// Calculate the difference in seconds between the future and current date
+				var diff6 = futureDate6.getTime() / 1000 - currentDate.getTime() / 1000;
+
+				// Instantiate a coutdown FlipClock
+				clock = $('.clock-6').FlipClock(diff6, {
+					clockFace: 'DailyCounter',
+					countdown: true
+				});
+				
+                /*
+				////////////////////////////////////////////////////////////////////
+				// Countdown 7
+				// Do not forget to add in the new variables with new numbers//
+				// Grab the current date
+				var currentDate = new Date();
+				
+				// Set some date in the future. In this case, it's always Jan 1
+				//month is always minus 1
+				var futureDate7  = new Date(currentDate.getFullYear(), 10, 28);
+
+				// Calculate the difference in seconds between the future and current date
+				var diff7 = futureDate7.getTime() / 1000 - currentDate.getTime() / 1000;
+
+				// Instantiate a coutdown FlipClock
+				clock = $('.clock-7').FlipClock(diff7, {
+					clockFace: 'DailyCounter',
+					countdown: true
+				});
+				
+				////////////////////////////////////////////////////////////////////
+				// Countdown 8
+				// Do not forget to add in the new variables with new numbers//
+				// Grab the current date
+				var currentDate = new Date();
+				
+				// Set some date in the future. In this case, it's always Jan 1
+				//month is always minus 1
+				var futureDate8  = new Date(currentDate.getFullYear(), 11, 23);
+
+				// Calculate the difference in seconds between the future and current date
+				var diff8 = futureDate8.getTime() / 1000 - currentDate.getTime() / 1000;
+
+				// Instantiate a coutdown FlipClock
+				clock = $('.clock-8').FlipClock(diff8, {
+					clockFace: 'DailyCounter',
+					countdown: true
+				});
+				
+				////////////////////////////////////////////////////////////////////
+				// Countdown 9
+				// Do not forget to add in the new variables with new numbers//
+				// Grab the current date
+				var currentDate = new Date();
+				
+				// Set some date in the future. In this case, it's always Jan 1
+				//month is always minus 1
+				var futureDate9  = new Date(currentDate.getFullYear(), 9, 31);
+
+				// Calculate the difference in seconds between the future and current date
+				var diff9 = futureDate9.getTime() / 1000 - currentDate.getTime() / 1000;
+
+				// Instantiate a coutdown FlipClock
+				clock = $('.clock-9').FlipClock(diff9, {
+					clockFace: 'DailyCounter',
+					countdown: true
+				});
+				
+				////////////////////////////////////////////////////////////////////
+				// Countdown 10
+				// Do not forget to add in the new variables with new numbers//
+				// Grab the current date
+				var currentDate = new Date();
+				
+				// Set some date in the future. In this case, it's always Jan 1
+				//month is always minus 1
+				var futureDate10  = new Date(currentDate.getFullYear(), 10, 31);
+
+				// Calculate the difference in seconds between the future and current date
+				var diff10 = futureDate10.getTime() / 1000 - currentDate.getTime() / 1000;
+
+				// Instantiate a coutdown FlipClock
+				clock = $('.clock-10').FlipClock(diff10, {
+					clockFace: 'DailyCounter',
+					countdown: true
+				});
+				*/
+		});
+	</script>
+	
+	</body>
+</html>
